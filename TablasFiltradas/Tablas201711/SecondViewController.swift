@@ -2,8 +2,8 @@
 //  SecondViewController.swift
 //  Tablas201711
 //
-//  Created by molina on 20/02/17.
-//  Copyright © 2017 Tec de Monterrey. All rights reserved.
+//  Created by Unbitten 2020
+//  Copyright © 2020 Unbitten All rights reserved.
 //
 
 import UIKit
