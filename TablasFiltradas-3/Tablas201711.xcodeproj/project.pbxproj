@@ -16,6 +16,8 @@
 		356B4D481E5B8F94002DD52B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 356B4D471E5B8F94002DD52B /* Assets.xcassets */; };
 		356B4D4B1E5B8F94002DD52B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 356B4D491E5B8F94002DD52B /* LaunchScreen.storyboard */; };
 		3597A18A1E5F80A1006B54D7 /* DetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3597A1891E5F80A1006B54D7 /* DetalleViewController.swift */; };
+		3EE2B609244D0BE100B80648 /* Registrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE2B608244D0BE100B80648 /* Registrate.swift */; };
+		3EE2B60B244D125C00B80648 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE2B60A244D125C00B80648 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		356B4D4A1E5B8F94002DD52B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		356B4D4C1E5B8F94002DD52B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3597A1891E5F80A1006B54D7 /* DetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleViewController.swift; sourceTree = "<group>"; };
+		3EE2B608244D0BE100B80648 /* Registrate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registrate.swift; sourceTree = "<group>"; };
+		3EE2B60A244D125C00B80648 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				3546B96B1E5B92090035B84F /* AcercaDeViewController.swift */,
 				3546B96D1E5B96FD0035B84F /* ListaMarcasTableViewController.swift */,
 				3597A1891E5F80A1006B54D7 /* DetalleViewController.swift */,
+				3EE2B608244D0BE100B80648 /* Registrate.swift */,
+				3EE2B60A244D125C00B80648 /* MainViewController.swift */,
 			);
 			path = Tablas201711;
 			sourceTree = "<group>";
@@ -154,8 +160,10 @@
 				356B4D431E5B8F94002DD52B /* SecondViewController.swift in Sources */,
 				356B4D3F1E5B8F94002DD52B /* AppDelegate.swift in Sources */,
 				3546B96C1E5B92090035B84F /* AcercaDeViewController.swift in Sources */,
+				3EE2B609244D0BE100B80648 /* Registrate.swift in Sources */,
 				356B4D411E5B8F94002DD52B /* FirstViewController.swift in Sources */,
 				3546B96E1E5B96FD0035B84F /* ListaMarcasTableViewController.swift in Sources */,
+				3EE2B60B244D125C00B80648 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

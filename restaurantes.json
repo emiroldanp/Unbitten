@@ -1,0 +1,31 @@
+
+[{"name":"Donas Eight One",
+  "Description":"Negocio Familiar enfocado en la repostería en la cual tenemos promociones de manera sorpresa",
+  "Address":"Av. Emiliano Zapata 150 Benito Juaréz 56140",
+  "image":"http://martinmolina.com.mx/202011/unbitten/imagenes/donas81.jpeg",
+  "Promo_Text":{"PromoText":"Pasteles a 50% de descuento","Discount":2},
+  "Price":200,
+  "Precio Final":100,
+  "ubicacion":{"Lat":19.3006279,"Lon":-99.1498785}
+},
+
+{"name":"Sushi 'El Bol'",
+    "Description":"Negocio Local enfocado en suhi en el cual tenemos promociones de manera sorpresa",
+    "Address":"Av. Cuahtémoc 150 Benito Juaréz 56120",
+    "image":"http://martinmolina.com.mx/202011/unbitten/imagenes/sushi.jpeg",
+    "Promo_Text":{"PromoText":"Sushi 3x2 hasta el cierre","Discount":2},
+    "Price":200,
+    "Precio Final":100,
+    "ubicacion":{"Lat":19.3006279,"Lon":-99.1498785}
+},
+
+{"name":"Tacos 'El Eddy'",
+    "Description":"Negocio local enfocado en la venta de los mejores tacos de la CDMX con promociones de manera sorpresa ",
+    "Address":"Av. Moctezuma 124 Roma Sur 13878",
+    "image":"http://martinmolina.com.mx/202011/unbitten/imagenes/tacos.jpeg",
+    "Promo_Text":{"PromoText":"Tacos 5x35 hasta el cierre","Discount":2},
+    "Price":200,
+    "Precio Final":100,
+    "ubicacion":{"Lat":19.3006279,"Lon":-99.1498785}
+}
+]

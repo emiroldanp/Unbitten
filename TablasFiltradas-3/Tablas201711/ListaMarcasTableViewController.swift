@@ -25,7 +25,7 @@ class ListaMarcasTableViewController: UITableViewController, UISearchResultsUpda
             // Filtrar los resultados de acuerdo al texto escrito en la caja que es obtenido a través del parámetro $0
             datosFiltrados = nuevoArray!.filter{
                 let objetoMarca=$0 as! [String:Any]
-                let s:String = objetoMarca["marca"] as! String;
+                let s:String = objetoMarca["name"] as! String;
                 return(s.lowercased().contains(searchController.searchBar.text!.lowercased())) }
         }
         
@@ -33,7 +33,7 @@ class ListaMarcasTableViewController: UITableViewController, UISearchResultsUpda
     }
     
     
-    let direccion="http://martinmolina.com.mx/201813/data/datos.json"
+    let direccion="http://martinmolina.com.mx/202011/unbitten/restaurantes.json"
     private let datos = [
         "Ford", "BMW", "Audi", "VW", "Chrysler", "Nissan", "Peugeot", "Renault", "Seat", "Citroen"
     ]
@@ -115,7 +115,7 @@ class ListaMarcasTableViewController: UITableViewController, UISearchResultsUpda
         //paso 12 remplazar el uso de nuevoArray por datosFitrados
         //Usar el objeto marca para la obtencion de los datos
         let objetoMarca = datosFiltrados[indexPath.row] as! [String: Any]
-        let s:String = objetoMarca["marca"] as! String
+        let s:String = objetoMarca["name"] as! String
         
         cell.textLabel?.text=s
         
@@ -206,7 +206,7 @@ class ListaMarcasTableViewController: UITableViewController, UISearchResultsUpda
             indice = indexPath.row
             objetoMarca = nuevoArray![indice] as! [String: Any]
         }
-        let s:String = objetoMarca["marca"] as! String
+        let s:String = objetoMarca["name"] as! String
         
         siguienteVista.marca = s
         self.navigationController?.pushViewController(siguienteVista, animated: true)
