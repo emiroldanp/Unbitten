@@ -18,6 +18,10 @@
 		3597A18A1E5F80A1006B54D7 /* DetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3597A1891E5F80A1006B54D7 /* DetalleViewController.swift */; };
 		3EE2B609244D0BE100B80648 /* Registrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE2B608244D0BE100B80648 /* Registrate.swift */; };
 		3EE2B60B244D125C00B80648 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE2B60A244D125C00B80648 /* MainViewController.swift */; };
+		F40244A9244E63BD00072534 /* CompraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40244A8244E63BC00072534 /* CompraViewController.swift */; };
+		F40244AB244E65EF00072534 /* ConfiguracionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40244AA244E65EF00072534 /* ConfiguracionViewController.swift */; };
+		F40244B1244E6A8E00072534 /* PagoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40244B0244E6A8E00072534 /* PagoViewController.swift */; };
+		F40244B3244E6DB300072534 /* AddPagoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40244B2244E6DB300072534 /* AddPagoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		3597A1891E5F80A1006B54D7 /* DetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleViewController.swift; sourceTree = "<group>"; };
 		3EE2B608244D0BE100B80648 /* Registrate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registrate.swift; sourceTree = "<group>"; };
 		3EE2B60A244D125C00B80648 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F40244A8244E63BC00072534 /* CompraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompraViewController.swift; sourceTree = "<group>"; };
+		F40244AA244E65EF00072534 /* ConfiguracionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguracionViewController.swift; sourceTree = "<group>"; };
+		F40244B0244E6A8E00072534 /* PagoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoViewController.swift; sourceTree = "<group>"; };
+		F40244B2244E6DB300072534 /* AddPagoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPagoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +75,13 @@
 			isa = PBXGroup;
 			children = (
 				356B4D3E1E5B8F94002DD52B /* AppDelegate.swift */,
+				F40244A8244E63BC00072534 /* CompraViewController.swift */,
+				F40244AA244E65EF00072534 /* ConfiguracionViewController.swift */,
 				356B4D401E5B8F94002DD52B /* FirstViewController.swift */,
 				356B4D421E5B8F94002DD52B /* SecondViewController.swift */,
 				356B4D441E5B8F94002DD52B /* Main.storyboard */,
+				F40244B0244E6A8E00072534 /* PagoViewController.swift */,
+				F40244B2244E6DB300072534 /* AddPagoViewController.swift */,
 				356B4D471E5B8F94002DD52B /* Assets.xcassets */,
 				356B4D491E5B8F94002DD52B /* LaunchScreen.storyboard */,
 				356B4D4C1E5B8F94002DD52B /* Info.plist */,
@@ -156,12 +168,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F40244AB244E65EF00072534 /* ConfiguracionViewController.swift in Sources */,
+				F40244B1244E6A8E00072534 /* PagoViewController.swift in Sources */,
 				3597A18A1E5F80A1006B54D7 /* DetalleViewController.swift in Sources */,
 				356B4D431E5B8F94002DD52B /* SecondViewController.swift in Sources */,
 				356B4D3F1E5B8F94002DD52B /* AppDelegate.swift in Sources */,
+				F40244B3244E6DB300072534 /* AddPagoViewController.swift in Sources */,
 				3546B96C1E5B92090035B84F /* AcercaDeViewController.swift in Sources */,
 				3EE2B609244D0BE100B80648 /* Registrate.swift in Sources */,
 				356B4D411E5B8F94002DD52B /* FirstViewController.swift in Sources */,
+				F40244A9244E63BD00072534 /* CompraViewController.swift in Sources */,
 				3546B96E1E5B96FD0035B84F /* ListaMarcasTableViewController.swift in Sources */,
 				3EE2B60B244D125C00B80648 /* MainViewController.swift in Sources */,
 			);

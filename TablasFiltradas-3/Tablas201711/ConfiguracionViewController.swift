@@ -1,29 +1,15 @@
 //
-//  MainViewController.swift
+//  ConfiguracionViewController.swift
 //  Tablas201711
 //
-//  Created by Edgar Lopez Valdes on 19/04/20.
+//  Created by Emiliano Roldan on 20/04/20.
 //  Copyright © 2020 Tec de Monterrey. All rights reserved.
 //
 
 import UIKit
 
-class MainViewController: UIViewController {
-    
-    
-    @IBOutlet weak var RegistrateBtn: UIButton!
-    @IBOutlet weak var LoginLabel: UILabel!
-    @IBOutlet weak var Login: UIButton!
-    @IBOutlet weak var Ingresa: UIButton!
-    @IBOutlet weak var contrasenia: UITextField!
-    @IBOutlet weak var usuario: UITextField!
-    
-    
-    @IBAction func login(_ sender: Any) {
-    }
-    
-    @IBAction func RegistrateAction(_ sender: Any) {
-    }
+class ConfiguracionViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -38,13 +24,9 @@ class MainViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         
-        _ = segue.destination as! FirstViewController
-
+        _ = segue.destination as! MainViewController
         // Pass the selected object to the new view controller.
     }
     
 
 }
-
-
-
