@@ -177,7 +177,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-8" translatesAutoresizingMaskIntoConstraints="NO" id="O9O-7j-R3U">
-                                <rect key="frame" x="20" y="435" width="156" height="83.000000000000227"/>
+                                <rect key="frame" x="20" y="435" width="156" height="83"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="83" id="Vm0-sN-S4d"/>
                                 </constraints>
