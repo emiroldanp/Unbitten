@@ -24,7 +24,12 @@ class PagoViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         
-        _ = segue.destination as! AddPagoViewController
+        if segue.identifier == "agregarmetodo" {
+            _ = segue.destination as! AddPagoViewController
+        // Pass the selected object to the new view controller.
+        } else if segue.identifier == "volveraconfiguracion" {
+            _ = segue.destination as! ConfiguracionViewController
+        }
 
         // Pass the selected object to the new view controller.
     }

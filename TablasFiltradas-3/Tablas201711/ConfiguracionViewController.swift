@@ -24,8 +24,13 @@ class ConfiguracionViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         
-        _ = segue.destination as! MainViewController
+        //_ = segue.destination as! MainViewController
+        if segue.identifier == "metododepago" {
+            _ = segue.destination as! PagoViewController
         // Pass the selected object to the new view controller.
+        } else if segue.identifier == "cierresesion" {
+            _ = segue.destination as! MainViewController
+        }
     }
     
 

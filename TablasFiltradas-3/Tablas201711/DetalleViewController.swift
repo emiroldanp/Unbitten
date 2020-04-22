@@ -31,7 +31,12 @@ class DetalleViewController: UIViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
-        _ = segue.destination as! CompraViewController
+        if segue.identifier == "comprar" {
+            _ = segue.destination as! CompraViewController
+        // Pass the selected object to the new view controller.
+        } else if segue.identifier == "liveview" {
+            _ = segue.destination as! LiveViewController
+        }
         // Pass the selected object to the new view controller.
     }
     

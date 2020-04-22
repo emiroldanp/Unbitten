@@ -38,8 +38,12 @@ class MainViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         
-        _ = segue.destination as! FirstViewController
-
+        if segue.identifier == "ingresa" {
+            _ = segue.destination as! FirstViewController
+        // Pass the selected object to the new view controller.
+        } else if segue.identifier == "registrate" {
+            _ = segue.destination as! Registrate
+        }
         // Pass the selected object to the new view controller.
     }
     
