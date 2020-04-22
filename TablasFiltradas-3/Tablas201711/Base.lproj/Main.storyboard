@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -41,7 +41,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home-icon" id="acW-dT-cKf"/>
                     <navigationItem key="navigationItem" id="Zly-cA-kUG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -97,7 +97,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.43365664250000002" blue="0.50875765340000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Pedido" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Pedido" image="cart-icon" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -413,7 +413,7 @@
         <scene sceneID="X6H-5M-f5s">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OHW-2k-eMC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Lugares" id="twk-0G-D06"/>
+                    <tabBarItem key="tabBarItem" title="Lugares" image="list-icon" id="twk-0G-D06"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tCw-gQ-uDU">
@@ -623,7 +623,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.43365664250000002" blue="0.50875765340000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Configuración" id="mvL-g6-CNs"/>
+                    <tabBarItem key="tabBarItem" title="Configuración" image="settings-icon" id="mvL-g6-CNs"/>
                     <navigationItem key="navigationItem" title="Configuración" id="wAF-u5-Bdz"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
@@ -845,6 +845,12 @@
             <point key="canvasLocation" x="3208.6956521739135" y="1087.5"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="a3r-HK-16J"/>
+        <segue reference="5jL-5n-V0E"/>
+        <segue reference="MNJ-o8-nPg"/>
+        <segue reference="u7Y-xg-7CH"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="400" height="220"/>
         <image name="Image-1" width="300" height="300"/>
@@ -857,13 +863,9 @@
         <image name="Image-7" width="622" height="618"/>
         <image name="Image-8" width="1400" height="996"/>
         <image name="Image-9" width="564" height="958"/>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="cart-icon" width="28.5" height="28.5"/>
+        <image name="home-icon" width="28.5" height="28.5"/>
+        <image name="list-icon" width="28.5" height="28.5"/>
+        <image name="settings-icon" width="28.5" height="28.5"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="a3r-HK-16J"/>
-        <segue reference="5jL-5n-V0E"/>
-        <segue reference="MNJ-o8-nPg"/>
-        <segue reference="u7Y-xg-7CH"/>
-    </inferredMetricsTieBreakers>
 </document>
