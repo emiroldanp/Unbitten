@@ -22,6 +22,7 @@
 		F40244AB244E65EF00072534 /* ConfiguracionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40244AA244E65EF00072534 /* ConfiguracionViewController.swift */; };
 		F40244B1244E6A8E00072534 /* PagoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40244B0244E6A8E00072534 /* PagoViewController.swift */; };
 		F40244B3244E6DB300072534 /* AddPagoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40244B2244E6DB300072534 /* AddPagoViewController.swift */; };
+		F4135CE3244FB92F008E7FB8 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4135CE2244FB92E008E7FB8 /* LiveViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		F40244AA244E65EF00072534 /* ConfiguracionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguracionViewController.swift; sourceTree = "<group>"; };
 		F40244B0244E6A8E00072534 /* PagoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagoViewController.swift; sourceTree = "<group>"; };
 		F40244B2244E6DB300072534 /* AddPagoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPagoViewController.swift; sourceTree = "<group>"; };
+		F4135CE2244FB92E008E7FB8 /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				356B4D4C1E5B8F94002DD52B /* Info.plist */,
 				3546B96B1E5B92090035B84F /* AcercaDeViewController.swift */,
 				3546B96D1E5B96FD0035B84F /* ListaMarcasTableViewController.swift */,
+				F4135CE2244FB92E008E7FB8 /* LiveViewController.swift */,
 				3597A1891E5F80A1006B54D7 /* DetalleViewController.swift */,
 				3EE2B608244D0BE100B80648 /* Registrate.swift */,
 				3EE2B60A244D125C00B80648 /* MainViewController.swift */,
@@ -175,6 +178,7 @@
 				356B4D3F1E5B8F94002DD52B /* AppDelegate.swift in Sources */,
 				F40244B3244E6DB300072534 /* AddPagoViewController.swift in Sources */,
 				3546B96C1E5B92090035B84F /* AcercaDeViewController.swift in Sources */,
+				F4135CE3244FB92F008E7FB8 /* LiveViewController.swift in Sources */,
 				3EE2B609244D0BE100B80648 /* Registrate.swift in Sources */,
 				356B4D411E5B8F94002DD52B /* FirstViewController.swift in Sources */,
 				F40244A9244E63BD00072534 /* CompraViewController.swift in Sources */,
