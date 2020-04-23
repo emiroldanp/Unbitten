@@ -27,7 +27,7 @@ class AddPagoViewController: UIViewController {
             _ = segue.destination as! PagoViewController
         // Pass the selected object to the new view controller.
         } else if segue.identifier == "agregar" {
-            _ = segue.destination as! ConfiguracionViewController
+            _ = segue.destination as! UINavigationController
         }
         // Pass the selected object to the new view controller.
     }

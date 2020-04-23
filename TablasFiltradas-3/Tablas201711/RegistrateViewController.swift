@@ -26,8 +26,8 @@ class RegistrateViewController: UIViewController {
         if segue.identifier == "ingresa2" {
             _ = segue.destination as! FirstViewController
         // Pass the selected object to the new view controller.
-        } else if segue.identifier == "iralogin" {
-            _ = segue.destination as! MainViewController
+        } else if segue.identifier == "iraingresa" {
+            _ = segue.destination as! UINavigationController
         }
         // Pass the selected object to the new view controller.
     }
