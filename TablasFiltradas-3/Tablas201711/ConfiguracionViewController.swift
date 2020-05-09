@@ -8,12 +8,34 @@
 
 import UIKit
 
-class ConfiguracionViewController: UIViewController {
+class ConfiguracionViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    
+    @IBOutlet weak var fotoVista: UIButton!
+    private let miPicker = UIImagePickerController()
+    
+    @IBAction func guardarImagen(_ sender: UIButton) {
+         //UIImageWriteToSavedPhotosAlbum(fotoVista.image!, nil, nil, nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        miPicker.delegate = self
+    }
+    
+    @IBAction func album() {
+        miPicker.sourceType = UIImagePickerControllerSourceType.photoLibrary
+        present(miPicker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        //fotoVista.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
     }
     
 
