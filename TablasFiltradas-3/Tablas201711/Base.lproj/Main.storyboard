@@ -48,6 +48,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="home-icon" id="acW-dT-cKf"/>
                     <navigationItem key="navigationItem" id="Zly-cA-kUG"/>
+                    <connections>
+                        <outlet property="mapa" destination="caX-Uf-5Pp" id="6ns-7z-6Bd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
