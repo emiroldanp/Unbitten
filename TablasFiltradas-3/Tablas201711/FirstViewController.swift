@@ -22,7 +22,9 @@ class FirstViewController: UIViewController,CLLocationManagerDelegate{
     let annotationLocations = [
         ["title":"Krispy Kreme", "latitude": 19.3056727, "longitude": -99.1659538],
         ["title":"Tacos Charly", "latitude": 19.2933369, "longitude": -99.16996],
-        ["title":"Sushi Roll", "latitude": 19.3054303, "longitude": -99.2025131]
+        ["title":"Sushi Roll", "latitude": 19.3054303, "longitude": -99.2025131],
+        ["title":"Santa Clara", "latitude": 19.286792, "longitude": -99.163281],
+        ["title":"Wingstop", "latitude": 19.2963143, "longitude": -99.15926]
     ]
     
     func createAnnotations(locations: [[String : Any]]){
