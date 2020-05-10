@@ -453,7 +453,6 @@
         <!--Lugares-->
         <scene sceneID="X6H-5M-f5s">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8ED-fM-5GK" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OHW-2k-eMC" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Lugares" image="list-icon" id="twk-0G-D06"/>
                     <toolbarItems/>
@@ -467,6 +466,7 @@
                         <segue destination="jiR-ue-mpq" kind="relationship" relationship="rootViewController" id="Jcw-j6-41s"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ED-fM-5GK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="959.4202898550725" y="783.48214285714278"/>
         </scene>
@@ -664,6 +664,9 @@
                                 <state key="normal" title="Cambiar Foto">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="cambiarFoto:" destination="2HK-s5-eGG" eventType="touchUpInside" id="o55-Mo-cwg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZJ-7y-wFL">
                                 <rect key="frame" x="254" y="350" width="102" height="38"/>
@@ -673,13 +676,36 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fb4-sZ-wNU">
+                                <rect key="frame" x="254" y="350" width="102" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Guardar">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="guardarImagen:" destination="2HK-s5-eGG" eventType="touchUpInside" id="mAL-ZA-5bg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ov9-OQ-k8X">
+                                <rect key="frame" x="71" y="385" width="102" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Tomar Foto">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="cambiarFoto:" destination="2HK-s5-eGG" eventType="touchUpInside" id="keP-CX-JZU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.43365664250000002" blue="0.50875765340000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" title="Configuración" id="wAF-u5-Bdz"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="fotoVista" destination="y5m-s7-G4f" id="jaj-xV-rTN"/>
+                        <outlet property="camaraBoton" destination="Ov9-OQ-k8X" id="Tc1-Mm-cci"/>
+                        <outlet property="fotoVista" destination="nsq-sc-2nO" id="7rJ-5V-tOh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kdo-NG-eDJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -922,7 +948,7 @@
         <image name="settings-icon" width="28.5" height="28.5"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5jL-5n-V0E"/>
+        <segue reference="LxU-ro-iOy"/>
         <segue reference="a3r-HK-16J"/>
         <segue reference="GtS-RU-2LM"/>
         <segue reference="Ta7-EQ-Ylr"/>

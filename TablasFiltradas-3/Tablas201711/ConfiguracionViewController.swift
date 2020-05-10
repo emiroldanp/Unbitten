@@ -7,38 +7,45 @@
 //
 
 import UIKit
+import Vision
 
 class ConfiguracionViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
+    @IBOutlet weak var camaraBoton: UIButton!
+    @IBOutlet weak var fotoVista: UIImageView!
     
-    @IBOutlet weak var fotoVista: UIButton!
-    private let miPicker = UIImagePickerController()
     
-    @IBAction func guardarImagen(_ sender: UIButton) {
-         //UIImageWriteToSavedPhotosAlbum(fotoVista.image!, nil, nil, nil)
-    }
-    
+    private let miPicker = UIImagePickerController()    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view, typically from a nib.
+        if !UIImagePickerController.isSourceTypeAvailable(.camera){
+            camaraBoton.isHidden = true
+        }
         miPicker.delegate = self
+        
     }
     
-    @IBAction func album() {
+    @IBAction func guardarImagen(_ sender: Any) {
+        UIImageWriteToSavedPhotosAlbum(fotoVista.image!, nil, nil, nil)
+    }
+    /*
+    @IBAction func guardarFoto(_ sender: Any) {
+    UIImageWriteToSavedPhotosAlbum(fotoVista.image!, nil, nil, nil)
+    }*/
+    
+    @IBAction func cambiarFoto(_ sender: Any) {
         miPicker.sourceType = UIImagePickerControllerSourceType.photoLibrary
         present(miPicker, animated: true, completion: nil)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        //fotoVista.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+        fotoVista.image = info[UIImagePickerControllerOriginalImage] as? UIImage
         picker.dismiss(animated: true, completion: nil)
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         picker.dismiss(animated: true, completion: nil)
     }
-    
-
     
     // MARK: - Navigation
 
