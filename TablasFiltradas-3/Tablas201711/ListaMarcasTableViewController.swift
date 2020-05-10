@@ -26,6 +26,7 @@ class ListaMarcasTableViewController: UITableViewController, UISearchResultsUpda
             datosFiltrados = nuevoArray!.filter{
                 let objetoMarca=$0 as! [String:Any]
                 let s:String = objetoMarca["name"] as! String;
+                //let UI:UIImage = objetoMarca["image"] as! UIImage;
                 return(s.lowercased().contains(searchController.searchBar.text!.lowercased())) }
         }
         
@@ -117,7 +118,15 @@ class ListaMarcasTableViewController: UITableViewController, UISearchResultsUpda
         let objetoMarca = datosFiltrados[indexPath.row] as! [String: Any]
         let s:String = objetoMarca["name"] as! String
         
+        let strImage:String = objetoMarca["image"] as! String
+        
+            // ... your strImage is String  ...
+        if let data = NSData(contentsOf: URL(string:strImage )!) {
+            cell.imageView!.image = UIImage(data: data as Data)
+         }
+        
         cell.textLabel?.text=s
+        //cell.imageView?.image=UI
         
         return cell
     }
@@ -190,6 +199,7 @@ class ListaMarcasTableViewController: UITableViewController, UISearchResultsUpda
     //Paso 14: crear la funcion disSelectRow
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         var indice = 0
+        
         var objetoMarca = [String:Any]()
         //Paso 15: crear un identificador para el controlador de vista a nivel detalle
         let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "Detalle") as! DetalleViewController
@@ -207,10 +217,13 @@ class ListaMarcasTableViewController: UITableViewController, UISearchResultsUpda
             objetoMarca = nuevoArray![indice] as! [String: Any]
         }
         let s:String = objetoMarca["name"] as! String
+   
+        
         
         siguienteVista.marca = s
         self.navigationController?.pushViewController(siguienteVista, animated: true)
         
     }
+    
 
 }
