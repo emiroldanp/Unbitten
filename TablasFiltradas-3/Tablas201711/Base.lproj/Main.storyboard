@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZYa-vB-HnW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZYa-vB-HnW">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -325,7 +325,7 @@
                         <viewControllerLayoutGuide type="bottom" id="PWN-LC-Wb9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="g44-gZ-HZo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="zZY-4e-RC4">
@@ -584,7 +584,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Sw4-BC-pBF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsN-4Z-dWE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5K-uC-RgZ">
@@ -932,6 +932,12 @@
             <point key="canvasLocation" x="-1242.0289855072465" y="922.76785714285711"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="LxU-ro-iOy"/>
+        <segue reference="a3r-HK-16J"/>
+        <segue reference="GtS-RU-2LM"/>
+        <segue reference="Ta7-EQ-Ylr"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="400" height="220"/>
         <image name="Image-10" width="560" height="988"/>
@@ -947,10 +953,4 @@
         <image name="list-icon" width="28.5" height="28.5"/>
         <image name="settings-icon" width="28.5" height="28.5"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="LxU-ro-iOy"/>
-        <segue reference="a3r-HK-16J"/>
-        <segue reference="GtS-RU-2LM"/>
-        <segue reference="Ta7-EQ-Ylr"/>
-    </inferredMetricsTieBreakers>
 </document>
