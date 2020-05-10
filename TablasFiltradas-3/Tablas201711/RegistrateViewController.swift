@@ -24,7 +24,7 @@ class RegistrateViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         if segue.identifier == "ingresa2" {
-            _ = segue.destination as! FirstViewController
+            _ = segue.destination as! UITabBarController
         // Pass the selected object to the new view controller.
         } else if segue.identifier == "iraingresa" {
             _ = segue.destination as! UINavigationController

@@ -39,7 +39,7 @@ class MainViewController: UIViewController {
         // Get the new view controller using segue.destination.
         
         if segue.identifier == "ingresa" {
-            _ = segue.destination as! FirstViewController
+            _ = segue.destination as! UITabBarController
         // Pass the selected object to the new view controller.
         } else if segue.identifier == "registro" {
             _ = segue.destination as! RegistrateViewController
