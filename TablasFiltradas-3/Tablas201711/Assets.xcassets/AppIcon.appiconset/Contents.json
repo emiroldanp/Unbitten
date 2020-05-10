@@ -1,117 +1,98 @@
 {
   "images" : [
     {
-      "filename" : "UnbittenIcon-1.jpeg",
       "idiom" : "iphone",
-      "scale" : "2x",
-      "size" : "20x20"
+      "size" : "20x20",
+      "scale" : "2x"
     },
     {
-      "filename" : "UnbittenIcon.jpeg",
       "idiom" : "iphone",
-      "scale" : "3x",
-      "size" : "20x20"
+      "size" : "20x20",
+      "scale" : "3x"
     },
     {
-      "filename" : "UnbittenIcon-7.jpeg",
       "idiom" : "iphone",
-      "scale" : "2x",
-      "size" : "29x29"
+      "size" : "29x29",
+      "scale" : "2x"
     },
     {
-
-      "filename" : "UnbittenIcon-6.jpeg",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "29x29"
     },
     {
-      "filename" : "UnbittenIcon-4.jpeg",
       "idiom" : "iphone",
-      "scale" : "2x",
-      "size" : "40x40"
+      "size" : "40x40",
+      "scale" : "2x"
     },
     {
-      "filename" : "UnbittenIcon-8.jpeg",
       "idiom" : "iphone",
-      "scale" : "3x",
-      "size" : "40x40"
+      "size" : "40x40",
+      "scale" : "3x"
     },
     {
-      "filename" : "UnbittenIcon-9.jpeg",
       "idiom" : "iphone",
-      "scale" : "2x",
-      "size" : "60x60"
+      "size" : "60x60",
+      "scale" : "2x"
     },
     {
-      "filename" : "UnbittenIcon-10.jpeg",
       "idiom" : "iphone",
-      "scale" : "3x",
-      "size" : "60x60"
+      "size" : "60x60",
+      "scale" : "3x"
     },
     {
-      "filename" : "UnbittenIcon-11.jpeg",
       "idiom" : "ipad",
-      "scale" : "1x",
-      "size" : "20x20"
+      "size" : "20x20",
+      "scale" : "1x"
     },
     {
-      "filename" : "UnbittenIcon-2.jpeg",
       "idiom" : "ipad",
-      "scale" : "2x",
-      "size" : "20x20"
+      "size" : "20x20",
+      "scale" : "2x"
     },
     {
-      "filename" : "UnbittenIcon-12.jpeg",
       "idiom" : "ipad",
-      "scale" : "1x",
-      "size" : "29x29"
+      "size" : "29x29",
+      "scale" : "1x"
     },
     {
-      "filename" : "UnbittenIcon-13.jpeg",
       "idiom" : "ipad",
-      "scale" : "2x",
-      "size" : "29x29"
+      "size" : "29x29",
+      "scale" : "2x"
     },
     {
-      "filename" : "UnbittenIcon-3.jpeg",
       "idiom" : "ipad",
-      "scale" : "1x",
-      "size" : "40x40"
+      "size" : "40x40",
+      "scale" : "1x"
     },
     {
-      "filename" : "UnbittenIcon-5.jpeg",
       "idiom" : "ipad",
-      "scale" : "2x",
-      "size" : "40x40"
+      "size" : "40x40",
+      "scale" : "2x"
     },
     {
-      "filename" : "UnbittenIcon-14.jpeg",
       "idiom" : "ipad",
-      "scale" : "1x",
-      "size" : "76x76"
+      "size" : "76x76",
+      "scale" : "1x"
     },
     {
-      "filename" : "UnbittenIcon-15.jpeg",
       "idiom" : "ipad",
-      "scale" : "2x",
-      "size" : "76x76"
+      "size" : "76x76",
+      "scale" : "2x"
     },
     {
-      "filename" : "UnbittenIcon-16.jpeg",
       "idiom" : "ipad",
-      "scale" : "2x",
-      "size" : "83.5x83.5"
+      "size" : "83.5x83.5",
+      "scale" : "2x"
     },
     {
-      "filename" : "UnbittenIcon-17.jpeg",
       "idiom" : "ios-marketing",
-      "scale" : "1x",
-      "size" : "1024x1024"
+      "size" : "1024x1024",
+      "scale" : "1x"
     }
   ],
   "info" : {
-    "author" : "xcode",
-    "version" : 1
+    "version" : 1,
+    "author" : "xcode"
   }
 }
