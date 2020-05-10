@@ -217,10 +217,25 @@ class ListaMarcasTableViewController: UITableViewController, UISearchResultsUpda
             objetoMarca = nuevoArray![indice] as! [String: Any]
         }
         let s:String = objetoMarca["name"] as! String
+        let d:String = objetoMarca["Description"] as! String
+        let strImage:String = objetoMarca["image"] as! String
+        let p:String = objetoMarca["Promo_Text"] as! String
+        let pre:String = objetoMarca["Precio Final"] as! String
+        var image:UIImage!
+        
+            // ... your strImage is String  ...
+        if let data = NSData(contentsOf: URL(string:strImage )!) {
+            image = UIImage(data: data as Data)
+         }
+        
    
         
         
         siguienteVista.marca = s
+        siguienteVista.descripcion = d
+        siguienteVista.imagen = image
+        siguienteVista.promocion = p
+        siguienteVista.precio = pre
         self.navigationController?.pushViewController(siguienteVista, animated: true)
         
     }

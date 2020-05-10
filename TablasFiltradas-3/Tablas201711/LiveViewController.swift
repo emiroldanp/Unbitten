@@ -9,9 +9,13 @@
 import UIKit
 
 class LiveViewController: UIViewController {
-
+    
+    var imagen:UIImage!
+    @IBOutlet weak var image: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        image.image = imagen
 
         // Do any additional setup after loading the view.
     }

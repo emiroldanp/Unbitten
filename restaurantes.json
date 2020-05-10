@@ -3,9 +3,9 @@
   "Description":"Negocio enfocado en la repostería en la cual tenemos promociones de manera sorpresa",
   "Address":"Plaza Gran Sur",
   "image":"http://martinmolina.com.mx/202011/unbitten/imagenes/donas81.jpeg",
-  "Promo_Text":{"PromoText":"Donas a 50% de descuento","Discount":2},
+  "Promo_Text":"Donas a 50% de descuento",
   "Price":200,
-  "Precio Final":100,
+  "Precio Final":"120",
   "ubicacion":{ "Lat": 19.3056727, "Lon": -99.1659538}
 },
 
@@ -13,9 +13,9 @@
     "Description":"Negocio enfocado en suhi en el cual tenemos promociones de manera sorpresa",
     "Address":"Ladera 16, Jardines del Pedregal",
     "image":"http://martinmolina.com.mx/202011/unbitten/imagenes/sushi.jpeg",
-    "Promo_Text":{"PromoText":"Sushi 3x2 hasta el cierre","Discount":2},
+    "Promo_Text":"Sushi 3x2 hasta el cierre",
     "Price":200,
-    "Precio Final":100,
+    "Precio Final":"100",
     "ubicacion":{"Lat": 19.3054303, "Lon": -99.2025131}
 },
 
@@ -23,9 +23,9 @@
     "Description":"Negocio local enfocado en la venta de los mejores tacos de la CDMX con promociones de manera sorpresa ",
     "Address":"San Fernando Colonia Toriello Guerra",
     "image":"http://martinmolina.com.mx/202011/unbitten/imagenes/tacos.jpeg",
-    "Promo_Text":{"PromoText":"Tacos 5x35 hasta el cierre","Discount":2},
+    "Promo_Text":"Tacos 5x35 hasta el cierre",
     "Price":200,
-    "Precio Final":100,
+    "Precio Final":"$150",
     "ubicacion":{"Lat": 19.2933369, "Lon": -99.16996}
 },
 
@@ -33,9 +33,9 @@
     "Description":"Negocio enfocado en la venta de helados ",
     "Address":"José María Morelos, Calz. de Tlalpan 4650",
     "image":"http://martinmolina.com.mx/202011/unbitten/imagenes/helados.jpeg",
-    "Promo_Text":{"PromoText":"Helados 2x1 hasta el cierre","Discount":2},
+    "Promo_Text":"Helados 2x1 hasta el cierre",
     "Price":200,
-    "Precio Final":100,
+    "Precio Final":"$200",
     "ubicacion":{"Lat": 19.286792, "Lon": -99.163281}
 },
 
@@ -43,9 +43,9 @@
     "Description":"Negocio enfocado en la venta de alitas",
     "Address":"Av Renato Leduc 224, Toriello Guerra",
     "image":"http://martinmolina.com.mx/202011/unbitten/imagenes/alitas.jpeg",
-    "Promo_Text":{"PromoText":"30 alitas por 200 hasta el cierre","Discount":2},
+    "Promo_Text":"30 alitas por 200 hasta el cierre",
     "Price":200,
-    "Precio Final":100,
+    "Precio Final":"$300",
     "ubicacion":{"Lat": 19.2963143, "Lon": -99.15926}
 }
 ]
