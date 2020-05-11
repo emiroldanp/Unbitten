@@ -9,9 +9,15 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    
+    var image:UIImage!
+    var promo:String!
+    @IBOutlet weak var Promo: UILabel!
+    @IBOutlet weak var imagen: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        imagen.image = image
+        Promo.text = promo
         // Do any additional setup after loading the view, typically from a nib.
     }
 

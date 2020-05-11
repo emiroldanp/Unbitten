@@ -53,6 +53,11 @@ class DetalleViewController: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         if segue.identifier == "comprar" {
             let siguienteVista = segue.destination as! CompraViewController
+            siguienteVista.imagen = laImagen.image
+            siguienteVista.precio = precio
+            siguienteVista.promo = promocion
+            siguienteVista.desc = descripcion
+            siguienteVista.marca = marca
             //siguienteVista.imagen = laImagen.image
             
             //_ = segue.destination as!
