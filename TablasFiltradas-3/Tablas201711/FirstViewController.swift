@@ -17,8 +17,31 @@ class FirstViewController: UIViewController,CLLocationManagerDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        mapa.showsUserLocation = true
         createAnnotations(locations: annotationLocations)
+        
+        if CLLocationManager.locationServicesEnabled() == true {
+            if CLLocationManager.authorizationStatus() == .restricted || CLLocationManager.authorizationStatus() == .denied ||
+                CLLocationManager.authorizationStatus() == .notDetermined {
+                
+                locationManager.requestWhenInUseAuthorization()
+            }
+            locationManager.desiredAccuracy = 1.0
+            locationManager.delegate = self
+            locationManager.startUpdatingLocation()
+
+        } else {
+            print("Please turn on location services or GPS")
     }
+}
+    func locationManager(_manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
+       let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: locations[0].coordinate.latitude, longitude: locations[0].coordinate.longitude), span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02))
+        self.mapa.setRegion(region, animated: true)
+    }
+    func locationManager(_manager: CLLocationManager, didFailWithError error: Error){
+        print("Unable to access your current location")
+    }
+    
     let annotationLocations = [
         ["title":"Krispy Kreme", "latitude": 19.3056727, "longitude": -99.1659538],
         ["title":"Tacos Charly", "latitude": 19.2933369, "longitude": -99.16996],
@@ -28,9 +51,7 @@ class FirstViewController: UIViewController,CLLocationManagerDelegate{
     ]
     
     func createAnnotations(locations: [[String : Any]]){
-        locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
-    locationManager.requestWhenInUseAuthorization()
         mapa.mapType=MKMapType.standard
         for location in locations{
             let annotations = MKPointAnnotation()
@@ -52,16 +73,10 @@ class FirstViewController: UIViewController,CLLocationManagerDelegate{
         
     }
 
-    func locationManager(_ manager: CLLocationManager,
-                         didChangeAuthorization status: CLAuthorizationStatus) {
-        if status == .authorizedWhenInUse{
-            locationManager.startUpdatingLocation()
-            mapa.showsUserLocation = true
-        } else {
-            locationManager.stopUpdatingLocation()
-            mapa.showsUserLocation = false
-        }
-    }
+    /*func locationManager(_ manager: CLLocationManager,
+                          didUpdateLocations locations: [CLLocation]) {
+        
+    }*/
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
