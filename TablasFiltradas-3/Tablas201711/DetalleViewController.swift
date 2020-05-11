@@ -34,6 +34,7 @@ class DetalleViewController: UIViewController {
         laImagen.image = imagen
         laMarca.text = marca
         
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,14 +48,20 @@ class DetalleViewController: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "LiveView") as! LiveViewController
+        
+        //siguienteVista.localT = laMarca.text ?? <#default value#>
         // Get the new view controller using segue.destinationViewController.
         if segue.identifier == "comprar" {
-            _ = segue.destination as! CompraViewController
+            let siguienteVista = segue.destination as! CompraViewController
+            //siguienteVista.imagen = laImagen.image
+            
+            //_ = segue.destination as!
         // Pass the selected object to the new view controller.
         } else if segue.identifier == "liveview" {
-            _ = segue.destination as! LiveViewController
-            siguienteVista.imagen = imagen
+            let siguienteVista = segue.destination as! LiveViewController
+            siguienteVista.imagen = laImagen.image
+            //_ = segue.destination as!
+            
         }
         // Pass the selected object to the new view controller.
     }

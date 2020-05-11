@@ -11,11 +11,14 @@ import UIKit
 class LiveViewController: UIViewController {
     
     var imagen:UIImage!
+    //var localT:String
     @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var local: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         image.image = imagen
+        //local.text = localT
 
         // Do any additional setup after loading the view.
     }
