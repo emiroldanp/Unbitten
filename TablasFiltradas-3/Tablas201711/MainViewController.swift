@@ -43,8 +43,9 @@ class MainViewController: UIViewController {
         // Pass the selected object to the new view controller.
         } else if segue.identifier == "registro" {
             _ = segue.destination as! RegistrateViewController
+        } else if segue.identifier == "about" {
+             _ = segue.destination as! AcercaDeViewController
         }
-        // Pass the selected object to the new view controller.
     }
     
 

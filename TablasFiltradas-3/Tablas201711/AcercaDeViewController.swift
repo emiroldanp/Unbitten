@@ -25,14 +25,20 @@ class AcercaDeViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
+        // Get the new view controller using segue.destination.
+        
+        //_ = segue.destination as! MainViewController
+        if segue.identifier == "backtologin" {
+            _ = segue.destination as! MainViewController
         // Pass the selected object to the new view controller.
+        }
+        
     }
-    */
+    
 
 }
