@@ -21,19 +21,20 @@
     {
       "filename" : "UnbittenIcon-6.jpeg",
       "idiom" : "iphone",
-      "size" : "29x29",
-      "scale" : "3x"
+      "scale" : "3x",
+      "size" : "29x29"
     },
     {
+      "filename" : "UnbittenIcon-5.jpeg",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
-      "size" : "40x40",
-      "idiom" : "iphone",
       "filename" : "WhatsApp Image 2020-05-09 at 1.32.28 PM.jpeg",
-      "scale" : "3x"
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "40x40"
     },
     {
       "filename" : "UnbittenIcon-9.jpeg",
