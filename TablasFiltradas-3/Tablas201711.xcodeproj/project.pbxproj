@@ -132,7 +132,7 @@
 				TargetAttributes = {
 					356B4D3A1E5B8F94002DD52B = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = DAFU744LYN;
+						DevelopmentTeam = D225W9969B;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -328,10 +328,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = DAFU744LYN;
+				DEVELOPMENT_TEAM = D225W9969B;
 				INFOPLIST_FILE = Tablas201711/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mx.itesm.Tablas201711;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.emiroldanp.Unbitten;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -341,10 +341,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = DAFU744LYN;
+				DEVELOPMENT_TEAM = D225W9969B;
 				INFOPLIST_FILE = Tablas201711/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mx.itesm.Tablas201711;
+				PRODUCT_BUNDLE_IDENTIFIER = mx.emiroldanp.Unbitten;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
