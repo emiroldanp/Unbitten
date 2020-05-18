@@ -34,8 +34,8 @@ class FirstViewController: UIViewController,CLLocationManagerDelegate{
             print("Please turn on location services or GPS")
     }
 }
-    func locationManager(_manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
-       let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: locations[0].coordinate.latitude, longitude: locations[0].coordinate.longitude), span: MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02))
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
+        let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: locations[0].coordinate.latitude, longitude: locations[0].coordinate.longitude), span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))
         self.mapa.setRegion(region, animated: true)
     }
     func locationManager(_manager: CLLocationManager, didFailWithError error: Error){
@@ -59,16 +59,20 @@ class FirstViewController: UIViewController,CLLocationManagerDelegate{
             annotations.coordinate = CLLocationCoordinate2D(latitude: location["latitude"] as! CLLocationDegrees, longitude: location["longitude"] as! CLLocationDegrees)
             
              mapa.addAnnotation(annotations)
+            mapa.showsCompass=true
+            mapa.showsScale=true
+            mapa.showsTraffic=true
+            mapa.isZoomEnabled=true
         }
       
         //let span=MKCoordinateSpan(latitudeDelta: delta, longitudeDelta: delta)
         //mapa.region=MKCoordinateRegion(center: cl, span: span)
        
         //mapa.addAnnotation(rest1)
-        mapa.showsCompass=true
+        /*mapa.showsCompass=true
         mapa.showsScale=true
         mapa.showsTraffic=true
-        mapa.isZoomEnabled=true
+        mapa.isZoomEnabled=true*/
         
         
     }
