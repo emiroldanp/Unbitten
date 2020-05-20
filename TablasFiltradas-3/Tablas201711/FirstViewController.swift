@@ -51,7 +51,13 @@ class FirstViewController: UIViewController,CLLocationManagerDelegate{
         ["title":"Tacos Charly", "latitude": 19.2933369, "longitude": -99.16996],
         ["title":"Sushi Roll", "latitude": 19.3054303, "longitude": -99.2025131],
         ["title":"Santa Clara", "latitude": 19.286792, "longitude": -99.163281],
-        ["title":"Wingstop", "latitude": 19.2963143, "longitude": -99.15926]
+        ["title":"Wingstop", "latitude": 19.2963143, "longitude": -99.15926],
+        ["title":"iHop", "latitude":  19.3053937, "longitude": -99.2023879],
+        ["title":"El Globo", "latitude":  19.281556, "longitude": -99.165509],
+        ["title":"Green Factory", "latitude":  19.2959105, "longitude": -99.1613345],
+        ["title":"Crepes & Waffles", "latitude":  19.3046276, "longitude": -99.1888236],
+        ["title":"McDonald's", "latitude":  19.2988728, "longitude": -99.1369537]
+        
     ]
     
     func createAnnotations(locations: [[String : Any]]){

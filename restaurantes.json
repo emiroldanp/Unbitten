@@ -6,7 +6,8 @@
   "Promo_Text":"Donas a 50% de descuento",
   "Price":200,
   "Precio Final":"120",
-  "ubicacion":{ "Lat": 19.3056727, "Lon": -99.1659538}
+  "ubicacion":{ "Lat": 19.3056727, "Lon": -99.1659538},
+  "tipo": "Donas"
 },
 
 {"name":"Sushi Roll",
@@ -16,7 +17,8 @@
     "Promo_Text":"Sushi 3x2 hasta el cierre",
     "Price":200,
     "Precio Final":"100",
-    "ubicacion":{"Lat": 19.3054303, "Lon": -99.2025131}
+    "ubicacion":{"Lat": 19.3054303, "Lon": -99.2025131},
+    "tipo": "Sushi"
 },
 
 {"name":"Tacos Charly",
@@ -26,7 +28,9 @@
     "Promo_Text":"Tacos 5x35 hasta el cierre",
     "Price":200,
     "Precio Final":"$150",
-    "ubicacion":{"Lat": 19.2933369, "Lon": -99.16996}
+    "ubicacion":{"Lat": 19.2933369, "Lon": -99.16996},
+    "tipo": "Tacos"
+
 },
 
 {"name":"Santa Clara",
@@ -36,7 +40,9 @@
     "Promo_Text":"Helados 2x1 hasta el cierre",
     "Price":200,
     "Precio Final":"$200",
-    "ubicacion":{"Lat": 19.286792, "Lon": -99.163281}
+    "ubicacion":{"Lat": 19.286792, "Lon": -99.163281},
+    "tipo": "Helados"
+
 },
 
 {"name":"Wingstop",
@@ -45,7 +51,70 @@
     "image":"http://martinmolina.com.mx/202011/unbitten/imagenes/alitas.jpeg",
     "Promo_Text":"30 alitas por 200 hasta el cierre",
     "Price":200,
+    "Precio Final":"200",
+    "ubicacion":{"Lat": 19.2963143, "Lon": -99.15926},
+    "tipo": "Alitas"
+
+},
+
+{"name":"iHop",
+    "Description":"Negocio enfocado en la venta de hot cakes",
+    "Address":"Ladera 16, Jardines del Pedregal",
+    "image":"http://martinmolina.com.mx/202011/unbitten/imagenes/hotCakes.jpeg",
+    "Promo_Text":"10 Hot Cakes por 300 hasta el cierre",
+    "Price":200,
     "Precio Final":"$300",
-    "ubicacion":{"Lat": 19.2963143, "Lon": -99.15926}
-}
+    "ubicacion":{"Lat": 19.3053937, "Lon": -99.2023879},
+    "tipo": "Hot Cakes"
+
+},
+
+{"name":"El Globo",
+    "Description":"Negocio enfocado en la venta de pasteles",
+    "Address":"CALZ DE TLALPAN 5017 ENTRE TESOQUIPA Y M, Mariano Matamoros",
+    "image":"http://martinmolina.com.mx/202011/unbitten/imagenes/pasteles.jpeg",
+    "Promo_Text":"2 Pasteles por 300 hasta el cierre",
+    "Price":200,
+    "Precio Final":"$300",
+    "ubicacion":{"Lat": 19.281556, "Lon": -99.165509},
+    "tipo": "Pasteles"
+
+},
+
+{"name":"Green Factory",
+    "Description":"Negocio enfocado en la venta de ensaladas",
+    "Address":"Puente de Piedra 127, Toriello Guerra",
+    "image":"http://martinmolina.com.mx/202011/unbitten/imagenes/ensaladas.jpeg",
+    "Promo_Text":"2 ensaladas por 200 hasta el cierre",
+    "Price":200,
+    "Precio Final":"$200",
+    "ubicacion":{"Lat": 19.2959105, "Lon": -99.1613345},
+    "tipo": "Ensaladas"
+
+},
+
+{"name":"Crepes & Waffles",
+    "Description":"Negocio enfocado en la venta de crepas",
+    "Address":"Anillo Perif. 4690, Insurgentes Cuicuilco",
+    "image":"http://martinmolina.com.mx/202011/unbitten/imagenes/crepas.jpeg",
+    "Promo_Text":"2 crepas por 250 hasta el cierre",
+    "Price":200,
+    "Precio Final":"$250",
+    "ubicacion":{"Lat": 19.3046276, "Lon":-99.1888236},
+    "tipo": "Crepas"
+
+},
+
+{"name":"McDonald's",
+    "Description":"Negocio enfocado en la venta de hamburguesas",
+    "Address":"Anillo Perif. 4690, Insurgentes Cuicuilco",
+    "image":"http://martinmolina.com.mx/202011/unbitten/imagenes/hamburguesa.jpeg",
+    "Promo_Text":"2 hamburguesas por 150 hasta el cierre",
+    "Price":200,
+    "Precio Final":"$150",
+    "ubicacion":{"Lat": 19.2988728, "Lon":-99.1369537},
+    "tipo": "Hamburguesas"
+
+},
+
 ]
