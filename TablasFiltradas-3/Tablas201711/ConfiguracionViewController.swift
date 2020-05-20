@@ -8,11 +8,13 @@
 
 import UIKit
 import Vision
+import Firebase
+import FirebaseAuth
 
 class ConfiguracionViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     @IBOutlet weak var camaraBoton: UIButton!
     @IBOutlet weak var fotoVista: UIImageView!
-    
+     var handle: AuthStateDidChangeListenerHandle?
     
     private let miPicker = UIImagePickerController()    
     override func viewDidLoad() {
@@ -22,6 +24,11 @@ class ConfiguracionViewController: UIViewController, UIImagePickerControllerDele
             camaraBoton.isHidden = true
         }
         miPicker.delegate = self
+        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+          // ...
+        }
+
+        
         
     }
     

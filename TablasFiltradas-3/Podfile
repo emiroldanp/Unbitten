@@ -8,6 +8,8 @@ target 'Tablas201711' do
   # Pods for Tablas201711
   pod 'Firebase/Core'
   pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  pod 'FirebaseUI/Auth'
   pod 'Firebase/Firestore'
   pod 'FirebaseFirestoreSwift'
 

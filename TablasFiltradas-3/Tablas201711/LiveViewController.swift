@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LiveViewController: UIViewController {
-    
+    var handle: AuthStateDidChangeListenerHandle?
     var imagen:UIImage!
     //var localT:String
     @IBOutlet weak var image: UIImageView!
@@ -19,7 +20,9 @@ class LiveViewController: UIViewController {
         super.viewDidLoad()
         image.image = imagen
         //local.text = localT
-
+        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+          // ...
+        }
         // Do any additional setup after loading the view.
     }
     

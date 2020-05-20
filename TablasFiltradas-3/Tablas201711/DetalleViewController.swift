@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class DetalleViewController: UIViewController {
 
@@ -15,7 +16,7 @@ class DetalleViewController: UIViewController {
     var imagen:UIImage!
     var descripcion:String=""
     var promocion:String=""
-    
+     var handle: AuthStateDidChangeListenerHandle?
     //var UIImageView
     @IBOutlet weak var laPrecio: UILabel!
     @IBOutlet weak var laDescripcion: UILabel!
@@ -26,7 +27,9 @@ class DetalleViewController: UIViewController {
     //@IBOutlet weak var laDescripcion: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+          // ...
+        }
         // Do any additional setup after loading the view.
         laPrecio.text = precio
         laPromocion.text = promocion
