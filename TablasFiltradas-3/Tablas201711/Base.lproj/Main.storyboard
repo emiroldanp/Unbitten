@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZYa-vB-HnW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZYa-vB-HnW">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -390,7 +390,7 @@
                         <viewControllerLayoutGuide type="bottom" id="PWN-LC-Wb9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="g44-gZ-HZo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="zZY-4e-RC4">
@@ -864,7 +864,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Lqn-Re-ry3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="11E-K5-nqR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image-5" translatesAutoresizingMaskIntoConstraints="NO" id="vEe-zb-kbI">
@@ -935,7 +935,7 @@
                         <viewControllerLayoutGuide type="bottom" id="xAz-xB-bYn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9hZ-Bk-hFN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image-9" translatesAutoresizingMaskIntoConstraints="NO" id="GuN-9l-hq6">
@@ -1052,14 +1052,6 @@
             <point key="canvasLocation" x="-1242.0289855072465" y="922.76785714285711"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="LxU-ro-iOy"/>
-        <segue reference="n60-9K-xif"/>
-        <segue reference="GtS-RU-2LM"/>
-        <segue reference="93Y-wR-8u6"/>
-        <segue reference="E0H-jf-Zc3"/>
-        <segue reference="SVN-U0-XHk"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="400" height="220"/>
         <image name="Image-10" width="560" height="988"/>
@@ -1074,4 +1066,12 @@
         <image name="list-icon" width="28.5" height="28.5"/>
         <image name="settings-icon" width="28.5" height="28.5"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="LxU-ro-iOy"/>
+        <segue reference="n60-9K-xif"/>
+        <segue reference="GtS-RU-2LM"/>
+        <segue reference="93Y-wR-8u6"/>
+        <segue reference="E0H-jf-Zc3"/>
+        <segue reference="SVN-U0-XHk"/>
+    </inferredMetricsTieBreakers>
 </document>
