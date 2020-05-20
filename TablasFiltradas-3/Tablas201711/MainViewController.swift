@@ -13,8 +13,9 @@ import FirebaseAuth
 class MainViewController: UIViewController {
     
     
-    @IBOutlet weak var loginPasswordField: UITextField!
+    
     @IBOutlet weak var loginEmailField: UITextField!
+    @IBOutlet weak var loginPasswordField: UITextField!
     
     var signed:Int?
     var email:String?
@@ -75,7 +76,7 @@ class MainViewController: UIViewController {
                     var user = Auth.auth().currentUser?.uid;
                     print("HOLAAAA")
                     print(user)
-                    /*
+                    
                     if(user != nil){
                         
                             let firebaseAuth = Auth.auth()
@@ -85,25 +86,50 @@ class MainViewController: UIViewController {
                           print ("Error signing out: %@", signOutError)
                         }
                         
-                    }*/
+                    }
                             
                         // User is signed in.
                       
-                    email = loginEmailField.text
-                    password = loginPasswordField.text
-                    Auth.auth().signIn(withEmail: email!, password: password!) { (user, error) in
+                    
+                    
+                    guard let email = self.loginEmailField.text, let password = self.loginPasswordField.text else {
+                        print("HOla")
+                      return
+                    }
+                    
+                    print(email)
+                    print(password)
+                    
+                    /*if(email == "marcevc77@gmail.com" && password=="123456"){
+                        print("HEY")
+                    }
+                    
+                    Auth.auth().signIn(withEmail: "marcevc77@gmail.com", password: ""123456"") { authResult, error in
+                      // ...
+                        print(error)
+                        if(error == nil){
+                            print("successful login")
+                            let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home")
+                            self.present(vc!, animated: true, completion: nil)
+                            user = Auth.auth().currentUser?.uid;
+                        }
+                        
+                    }*/
+                    
+                    Auth.auth().signIn(withEmail: email, password: password) { (user, error) in
                 //3.
-                        Auth.auth().signIn(withEmail: "x@x.mx",
+                        /*Auth.auth().signIn(withEmail: "x@x.mx",
                                             password: "123456") { (user, error) in
 
                             if error == nil {
                                 print("successful login")
                             }
 
-                        }
+                        }*/
                         
                         print(user)
-                        if user != nil {
+                        if error == nil {
+                            print("successful login")
                             let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home")
                             self.present(vc!, animated: true, completion: nil)
                             

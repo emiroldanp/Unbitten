@@ -467,14 +467,6 @@
                                     <segue destination="eqk-OS-tFW" kind="show" identifier="about" id="RRL-Rr-0bW"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="contraseña" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qTf-ae-013">
-                                <rect key="frame" x="89" y="455" width="240" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="isY-z6-SCZ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.43365664250000002" blue="0.50875765340000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -501,7 +493,7 @@
                     <navigationItem key="navigationItem" id="sob-P5-0vK"/>
                     <connections>
                         <outlet property="loginEmailField" destination="Chf-vx-nU1" id="0Ph-Vr-paL"/>
-                        <outlet property="loginPasswordField" destination="qTf-ae-013" id="nAc-SY-GuP"/>
+                        <outlet property="loginPasswordField" destination="96A-QC-Zxa" id="DZb-i9-LLH"/>
                         <outlet property="registrate" destination="P6u-wg-yiz" id="uNm-2C-my3"/>
                         <segue destination="49e-Tb-3d3" kind="show" identifier="ingresar" id="PhE-9P-Wbr"/>
                     </connections>
