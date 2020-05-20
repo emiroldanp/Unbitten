@@ -27,6 +27,7 @@
 		F45CE6A424673E470023E99C /* ChangePicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45CE6A324673E470023E99C /* ChangePicViewController.swift */; };
 		F46C575C2450D9EF007BB998 /* RegistrateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46C575B2450D9EF007BB998 /* RegistrateViewController.swift */; };
 		F4F7DD7C2475DB6100A3691F /* Alimentos.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F4F7DD7B2475DB6100A3691F /* Alimentos.mlmodel */; };
+		F4F7DD7E2475DC3C00A3691F /* MLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F7DD7D2475DC3C00A3691F /* MLViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		F45CE6A324673E470023E99C /* ChangePicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePicViewController.swift; sourceTree = "<group>"; };
 		F46C575B2450D9EF007BB998 /* RegistrateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrateViewController.swift; sourceTree = "<group>"; };
 		F4F7DD7B2475DB6100A3691F /* Alimentos.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Alimentos.mlmodel; sourceTree = SOURCE_ROOT; };
+		F4F7DD7D2475DC3C00A3691F /* MLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				F40244B2244E6DB300072534 /* AddPagoViewController.swift */,
 				356B4D471E5B8F94002DD52B /* Assets.xcassets */,
 				356B4D491E5B8F94002DD52B /* LaunchScreen.storyboard */,
+				F4F7DD7D2475DC3C00A3691F /* MLViewController.swift */,
 				356B4D4C1E5B8F94002DD52B /* Info.plist */,
 				3546B96B1E5B92090035B84F /* AcercaDeViewController.swift */,
 				F45CE6A324673E470023E99C /* ChangePicViewController.swift */,
@@ -295,6 +298,7 @@
 				3546B96C1E5B92090035B84F /* AcercaDeViewController.swift in Sources */,
 				F45CE6A424673E470023E99C /* ChangePicViewController.swift in Sources */,
 				F4135CE3244FB92F008E7FB8 /* LiveViewController.swift in Sources */,
+				F4F7DD7E2475DC3C00A3691F /* MLViewController.swift in Sources */,
 				356B4D411E5B8F94002DD52B /* FirstViewController.swift in Sources */,
 				F40244A9244E63BD00072534 /* CompraViewController.swift in Sources */,
 				3546B96E1E5B96FD0035B84F /* ListaMarcasTableViewController.swift in Sources */,
