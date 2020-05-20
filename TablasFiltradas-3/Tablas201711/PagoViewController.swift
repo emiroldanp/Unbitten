@@ -7,11 +7,17 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class PagoViewController: UIViewController {
-
+    
+     var handle: AuthStateDidChangeListenerHandle?
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+          // ...
+        }
 
         // Do any additional setup after loading the view.
     }

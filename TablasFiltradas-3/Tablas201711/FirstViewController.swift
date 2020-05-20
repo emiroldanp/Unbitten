@@ -9,11 +9,12 @@
 import UIKit
 import MapKit
 import CoreLocation
+import FirebaseAuth
 
 class FirstViewController: UIViewController,CLLocationManagerDelegate{
     @IBOutlet weak var mapa: MKMapView!
     private let locationManager = CLLocationManager()
-    
+    var handle: AuthStateDidChangeListenerHandle?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -29,6 +30,9 @@ class FirstViewController: UIViewController,CLLocationManagerDelegate{
             locationManager.desiredAccuracy = 1.0
             locationManager.delegate = self
             locationManager.startUpdatingLocation()
+            handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+              // ...
+            }
 
         } else {
             print("Please turn on location services or GPS")

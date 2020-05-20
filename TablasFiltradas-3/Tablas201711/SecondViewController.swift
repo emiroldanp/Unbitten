@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SecondViewController: UIViewController {
-    
+    var handle: AuthStateDidChangeListenerHandle?
     var image:UIImage!
     var promo:String!
     @IBOutlet weak var Promo: UILabel!
@@ -18,6 +19,9 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         imagen.image = image
         Promo.text = promo
+        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+          // ...
+        }
         // Do any additional setup after loading the view, typically from a nib.
     }
 

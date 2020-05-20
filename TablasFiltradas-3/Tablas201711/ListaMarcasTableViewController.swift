@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import FirebaseAuth
+
 // paso 1: agregar el prtotocolo UISearchResultsUpdating
 class ListaMarcasTableViewController: UITableViewController, UISearchResultsUpdating {
     //paso 2: crear una variable para almacenar lo datos que son filtrados
+    var handle: AuthStateDidChangeListenerHandle?
     var datosFiltrados = [Any]()
     //paso 3: crear un control de búsqueda
     let searchController = UISearchController(searchResultsController: nil)
@@ -61,7 +64,9 @@ class ListaMarcasTableViewController: UITableViewController, UISearchResultsUpda
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+          // ...
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZYa-vB-HnW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZYa-vB-HnW">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -100,7 +100,7 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-7" translatesAutoresizingMaskIntoConstraints="NO" id="Pj1-6C-RYZ">
-                                <rect key="frame" x="87" y="400.5" width="240" height="306.5"/>
+                                <rect key="frame" x="87" y="400.5" width="240" height="257.5"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="4BO-OS-P1h">
                                 <rect key="frame" x="329" y="37" width="65" height="47"/>
@@ -390,7 +390,7 @@
                         <viewControllerLayoutGuide type="bottom" id="PWN-LC-Wb9"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="g44-gZ-HZo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="zZY-4e-RC4">
@@ -423,7 +423,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="2eR-NK-QfP" kind="show" identifier="registro" id="NUd-wk-n2C"/>
+                                    <action selector="registro:" destination="ZYa-vB-HnW" eventType="touchUpInside" id="E4N-4m-bTQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b40-u2-Ed4">
@@ -437,10 +437,10 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="49e-Tb-3d3" kind="show" identifier="ingresa" id="GtS-RU-2LM"/>
+                                    <action selector="ingresa:" destination="ZYa-vB-HnW" eventType="touchUpInside" id="odC-Sm-Fxs"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="usuario" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Chf-vx-nU1">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="correo" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Chf-vx-nU1">
                                 <rect key="frame" x="87" y="366" width="240" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="4Ve-uj-Gre"/>
@@ -492,22 +492,20 @@
                     </view>
                     <navigationItem key="navigationItem" id="sob-P5-0vK"/>
                     <connections>
-                        <outlet property="Ingresa" destination="b40-u2-Ed4" id="tfm-Jh-XSP"/>
-                        <outlet property="Login" destination="b40-u2-Ed4" id="oIa-VX-nXc"/>
-                        <outlet property="LoginLabel" destination="jrt-uC-N95" id="HGB-Rg-BiJ"/>
-                        <outlet property="contrasenia" destination="96A-QC-Zxa" id="ebw-6f-qBZ"/>
-                        <outlet property="usuario" destination="Chf-vx-nU1" id="eJb-Ct-nd9"/>
-                        <segue destination="49e-Tb-3d3" kind="show" id="lQV-Vy-KiC"/>
+                        <outlet property="loginEmailField" destination="Chf-vx-nU1" id="0Ph-Vr-paL"/>
+                        <outlet property="loginPasswordField" destination="96A-QC-Zxa" id="DZb-i9-LLH"/>
+                        <outlet property="registrate" destination="P6u-wg-yiz" id="uNm-2C-my3"/>
+                        <segue destination="49e-Tb-3d3" kind="show" identifier="ingresar" id="PhE-9P-Wbr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Unq-2w-kXl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="597.10144927536237" y="-616.07142857142856"/>
+            <point key="canvasLocation" x="959" y="-650"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="Home" id="49e-Tb-3d3" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="b0J-OX-7cF"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
@@ -555,59 +553,60 @@
                         <viewControllerLayoutGuide type="bottom" id="u1z-3p-Qvs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qar-rj-Wjz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="jpQ-xZ-seP">
-                                <rect key="frame" x="298" y="44" width="116" height="61"/>
+                                <rect key="frame" x="298" y="88" width="116" height="61"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="61" id="8In-S2-eOT"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Regístrate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DlD-xr-vVg">
-                                <rect key="frame" x="139.5" y="84" width="135" height="37"/>
+                                <rect key="frame" x="139.5" y="128" width="135" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Ya tienes una cuenta?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxZ-2f-GcG">
-                                <rect key="frame" x="146.5" y="624" width="121" height="14"/>
+                                <rect key="frame" x="146.5" y="668" width="121" height="14"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nombre Completo" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rde-Ww-RMS">
-                                <rect key="frame" x="52" y="205" width="305" height="34"/>
+                                <rect key="frame" x="52" y="249" width="305" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vhC-Ec-tUM">
-                                <rect key="frame" x="52" y="299" width="305" height="34"/>
+                                <rect key="frame" x="52" y="343" width="305" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Contraseña" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5hn-NS-Ngf">
-                                <rect key="frame" x="52" y="409" width="305" height="34"/>
+                                <rect key="frame" x="52" y="453" width="305" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7d-Of-GP5">
-                                <rect key="frame" x="186" y="658" width="42" height="30"/>
+                                <rect key="frame" x="186" y="702" width="42" height="30"/>
                                 <state key="normal" title="Login ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ZYa-vB-HnW" kind="show" identifier="ingresa2" id="Ta7-EQ-Ylr"/>
+                                    <action selector="login:" destination="2eR-NK-QfP" eventType="touchUpInside" id="xhe-gt-O9D"/>
+                                    <segue destination="ZYa-vB-HnW" kind="show" identifier="ingresa2" id="tOO-NW-tlJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7aM-PP-AzE">
-                                <rect key="frame" x="52" y="517" width="305" height="30"/>
+                                <rect key="frame" x="52" y="561" width="305" height="30"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Registrarse">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ZYa-vB-HnW" kind="show" identifier="ingresa2" id="tvK-M0-Esy"/>
+                                    <action selector="registro:" destination="2eR-NK-QfP" eventType="touchUpInside" id="Rab-vH-1Uh"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Al registrarte aceptas los terminos y condiciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hm0-Pv-8P6">
@@ -646,6 +645,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="HzV-qY-wea"/>
+                    <connections>
+                        <outlet property="Contrasenia" destination="5hn-NS-Ngf" id="u3N-ia-bX8"/>
+                        <outlet property="Correo" destination="vhC-Ec-tUM" id="ha8-Ia-W4U"/>
+                        <outlet property="Nombre" destination="Rde-Ww-RMS" id="suu-Gv-ibj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mjs-p6-aJM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -864,7 +868,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Lqn-Re-ry3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="11E-K5-nqR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image-5" translatesAutoresizingMaskIntoConstraints="NO" id="vEe-zb-kbI">
@@ -935,7 +939,7 @@
                         <viewControllerLayoutGuide type="bottom" id="xAz-xB-bYn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9hZ-Bk-hFN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image-9" translatesAutoresizingMaskIntoConstraints="NO" id="GuN-9l-hq6">
@@ -1052,14 +1056,6 @@
             <point key="canvasLocation" x="-1242.0289855072465" y="922.76785714285711"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="LxU-ro-iOy"/>
-        <segue reference="n60-9K-xif"/>
-        <segue reference="GtS-RU-2LM"/>
-        <segue reference="93Y-wR-8u6"/>
-        <segue reference="E0H-jf-Zc3"/>
-        <segue reference="SVN-U0-XHk"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="400" height="220"/>
         <image name="Image-10" width="560" height="988"/>
@@ -1074,4 +1070,11 @@
         <image name="list-icon" width="28.5" height="28.5"/>
         <image name="settings-icon" width="28.5" height="28.5"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="5jL-5n-V0E"/>
+        <segue reference="n60-9K-xif"/>
+        <segue reference="tOO-NW-tlJ"/>
+        <segue reference="E0H-jf-Zc3"/>
+        <segue reference="lzU-1b-eKA"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -7,15 +7,18 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class AcercaDeViewController: UIViewController {
-
+     var handle: AuthStateDidChangeListenerHandle?
     @IBAction func cerrarVista(_ sender: Any) {
         self.presentingViewController?.dismiss(animated: true, completion: nil)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+          // ...
+        }
         // Do any additional setup after loading the view.
     }
 

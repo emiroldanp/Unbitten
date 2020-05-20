@@ -8,11 +8,13 @@
 
 import UIKit
 import Vision
+import Firebase
+import FirebaseAuth
 
 class ConfiguracionViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     @IBOutlet weak var camaraBoton: UIButton!
     @IBOutlet weak var fotoVista: UIImageView!
-    
+     var handle: AuthStateDidChangeListenerHandle?
     
     private let miPicker = UIImagePickerController()    
     override func viewDidLoad() {
@@ -22,6 +24,11 @@ class ConfiguracionViewController: UIViewController, UIImagePickerControllerDele
             camaraBoton.isHidden = true
         }
         miPicker.delegate = self
+        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+          // ...
+        }
+
+        
         
     }
     
@@ -34,12 +41,15 @@ class ConfiguracionViewController: UIViewController, UIImagePickerControllerDele
     }*/
     
     @IBAction func cambiarFoto(_ sender: Any) {
-        miPicker.sourceType = UIImagePickerControllerSourceType.photoLibrary
+        miPicker.sourceType = UIImagePickerController.SourceType.photoLibrary
         present(miPicker, animated: true, completion: nil)
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        fotoVista.image = info[UIImagePickerControllerOriginalImage] as? UIImage
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+// Local variable inserted by Swift 4.2 migrator.
+let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
+
+        fotoVista.image = info[convertFromUIImagePickerControllerInfoKey(UIImagePickerController.InfoKey.originalImage)] as? UIImage
         picker.dismiss(animated: true, completion: nil)
     }
     
@@ -63,4 +73,14 @@ class ConfiguracionViewController: UIViewController, UIImagePickerControllerDele
     }
     
 
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromUIImagePickerControllerInfoKeyDictionary(_ input: [UIImagePickerController.InfoKey: Any]) -> [String: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map {key, value in (key.rawValue, value)})
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromUIImagePickerControllerInfoKey(_ input: UIImagePickerController.InfoKey) -> String {
+	return input.rawValue
 }

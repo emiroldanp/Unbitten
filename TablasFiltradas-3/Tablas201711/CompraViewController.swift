@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class CompraViewController: UIViewController {
-    
+    var handle: AuthStateDidChangeListenerHandle?
     var imagen:UIImage!
     var precio:String = ""
     var marca:String = ""
@@ -23,6 +24,9 @@ class CompraViewController: UIViewController {
         image.image = imagen
         Promo.text = promo
         Precio.text = precio
+        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
+          // ...
+        }
         // Do any additional setup after loading the view.
     }
     
