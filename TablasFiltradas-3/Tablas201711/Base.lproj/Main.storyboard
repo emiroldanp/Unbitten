@@ -502,7 +502,7 @@
             </objects>
             <point key="canvasLocation" x="959" y="-650"/>
         </scene>
-        <!--Item-->
+        <!--FoodID-->
         <scene sceneID="T8y-dI-ovP">
             <objects>
                 <viewController id="OOm-qL-z3p" customClass="MLViewController" customModule="Tablas201711" customModuleProvider="target" sceneMemberID="viewController">
@@ -564,7 +564,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="fvq-E3-y4a"/>
+                    <tabBarItem key="tabBarItem" title="FoodID" image="foodID-image" id="fvq-E3-y4a"/>
                     <navigationItem key="navigationItem" id="jqA-yO-NtD"/>
                     <connections>
                         <outlet property="camaraBoton" destination="MVQ-aY-For" id="fi3-7s-cBw"/>
@@ -1148,6 +1148,7 @@
         <image name="Image-7" width="622" height="618"/>
         <image name="Image-9" width="564" height="958"/>
         <image name="cart-icon" width="28.5" height="28.5"/>
+        <image name="foodID-image" width="25" height="25"/>
         <image name="home-icon" width="28.5" height="28.5"/>
         <image name="list-icon" width="28.5" height="28.5"/>
         <image name="settings-icon" width="28.5" height="28.5"/>
