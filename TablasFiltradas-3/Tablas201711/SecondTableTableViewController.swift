@@ -1,22 +1,18 @@
 //
-//  ListaMarcasTableViewController.swift
+//  SecondTableTableViewController.swift
 //  Tablas201711
 //
-//  Created by molina on 20/02/17.
-//  Copyright © 2017 Tec de Monterrey. All rights reserved.
+//  Created by Edgar Lopez Valdes on 21/05/20.
+//  Copyright © 2020 Tec de Monterrey. All rights reserved.
 //
 
 import UIKit
-import FirebaseAuth
+import FirebaseUI
 
-// paso 1: agregar el prtotocolo UISearchResultsUpdating
-class ListaMarcasTableViewController: UITableViewController, UISearchResultsUpdating {
-    //paso 2: crear una variable para almacenar lo datos que son filtrados
-    
-        var tipo:String?
-    
+class SecondTableTableViewController: UITableViewController, UISearchResultsUpdating  {
+
+    var tipo:String?
        var handle: AuthStateDidChangeListenerHandle?
-       var t:String?
        var datosFiltrados = [Any]()
        //paso 3: crear un control de búsqueda
        let searchController = UISearchController(searchResultsController: nil)
@@ -120,8 +116,7 @@ class ListaMarcasTableViewController: UITableViewController, UISearchResultsUpda
 
        
        override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-            print(t as Any)
+           
            let cell = tableView.dequeueReusableCell(withIdentifier: "EntradaMarca", for: indexPath)
            if(tipo == nil){
                let objetoMarca = datosFiltrados[indexPath.row] as! [String: Any]
@@ -272,5 +267,7 @@ class ListaMarcasTableViewController: UITableViewController, UISearchResultsUpda
            self.navigationController?.pushViewController(siguienteVista, animated: true)
            
        }
+       
+       
 
 }

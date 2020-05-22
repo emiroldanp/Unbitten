@@ -7,7 +7,7 @@
   "Price":200,
   "Precio Final":"120",
   "ubicacion":{ "Lat": 19.3056727, "Lon": -99.1659538},
-  "tipo": "Donas"
+  "tipo": "donas"
 },
 
 {"name":"Sushi Roll",
@@ -18,7 +18,7 @@
     "Price":200,
     "Precio Final":"100",
     "ubicacion":{"Lat": 19.3054303, "Lon": -99.2025131},
-    "tipo": "Sushi"
+    "tipo": "sushi"
 },
 
 {"name":"Tacos Charly",
@@ -29,7 +29,7 @@
     "Price":200,
     "Precio Final":"$150",
     "ubicacion":{"Lat": 19.2933369, "Lon": -99.16996},
-    "tipo": "Tacos"
+    "tipo": "tacos"
 
 },
 
@@ -41,7 +41,7 @@
     "Price":200,
     "Precio Final":"$200",
     "ubicacion":{"Lat": 19.286792, "Lon": -99.163281},
-    "tipo": "Helados"
+    "tipo": "helados"
 
 },
 
@@ -53,7 +53,7 @@
     "Price":200,
     "Precio Final":"200",
     "ubicacion":{"Lat": 19.2963143, "Lon": -99.15926},
-    "tipo": "Alitas"
+    "tipo": "alitas"
 
 },
 
@@ -65,7 +65,7 @@
     "Price":200,
     "Precio Final":"$300",
     "ubicacion":{"Lat": 19.3053937, "Lon": -99.2023879},
-    "tipo": "Hot Cakes"
+    "tipo": "hotcakes"
 
 },
 
@@ -77,7 +77,7 @@
     "Price":200,
     "Precio Final":"$300",
     "ubicacion":{"Lat": 19.281556, "Lon": -99.165509},
-    "tipo": "Pasteles"
+    "tipo": "pasteles"
 
 },
 
@@ -89,7 +89,7 @@
     "Price":200,
     "Precio Final":"$200",
     "ubicacion":{"Lat": 19.2959105, "Lon": -99.1613345},
-    "tipo": "Ensaladas"
+    "tipo": "ensaladas"
 
 },
 
@@ -101,7 +101,7 @@
     "Price":200,
     "Precio Final":"$250",
     "ubicacion":{"Lat": 19.3046276, "Lon":-99.1888236},
-    "tipo": "Crepas"
+    "tipo": "crepas"
 
 },
 
@@ -113,7 +113,7 @@
     "Price":200,
     "Precio Final":"$150",
     "ubicacion":{"Lat": 19.2988728, "Lon":-99.1369537},
-    "tipo": "Hamburguesas"
+    "tipo": "hamburguesas"
 
 },
 

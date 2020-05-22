@@ -63,7 +63,7 @@ class MLViewController: UIViewController, UIImagePickerControllerDelegate, UINav
         }
         let resultado = bestPrediction+" "+String(bestConfidence)
         print(resultado)
-        identifiacionImagen.text = resultado
+        identifiacionImagen.text = bestPrediction
     }
     
     @IBAction func camara(_ sender: Any) {
@@ -98,7 +98,29 @@ class MLViewController: UIViewController, UIImagePickerControllerDelegate, UINav
     fileprivate func convertFromUIImagePickerControllerInfoKey(_ input: UIImagePickerController.InfoKey) -> String {
         return input.rawValue
     }
-
+    
+    /*
+    @IBAction func busc(_ sender: Any) {
+        let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "tabla") as! ListaMarcasTableViewController
+             //Verificar si la vista actual es la de búsqueda
+             
+             //sino utilizar la vista sin filtro
+            
+      
+             
+             siguienteVista.tipo = identifiacionImagen.text
+             siguienteVista.t = identifiacionImagen.text
+            
+             self.navigationController?.pushViewController(siguienteVista, animated: true)
+    }*/
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "tab" {
+            let destinationVC = segue.destination as! ListaMarcasTableViewController
+            destinationVC.tipo = identifiacionImagen.text!
+            
+        }
+    }
     /*
     // MARK: - Navigation
 

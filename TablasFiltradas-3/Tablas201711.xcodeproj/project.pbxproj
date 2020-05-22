@@ -18,6 +18,7 @@
 		3597A18A1E5F80A1006B54D7 /* DetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3597A1891E5F80A1006B54D7 /* DetalleViewController.swift */; };
 		3E9A00882474BEF300939548 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E9A00872474BEF300939548 /* GoogleService-Info.plist */; };
 		3EE2B60B244D125C00B80648 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE2B60A244D125C00B80648 /* MainViewController.swift */; };
+		3EF9B08924773C31002F77D9 /* SecondTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF9B08824773C31002F77D9 /* SecondTableTableViewController.swift */; };
 		5E096CA855727EE90D211130 /* Pods_Tablas201711.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C013829EF27C56F86417AF36 /* Pods_Tablas201711.framework */; };
 		F40244A9244E63BD00072534 /* CompraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40244A8244E63BC00072534 /* CompraViewController.swift */; };
 		F40244AB244E65EF00072534 /* ConfiguracionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40244AA244E65EF00072534 /* ConfiguracionViewController.swift */; };
@@ -46,6 +47,7 @@
 		3E9A00872474BEF300939548 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3EDE189C2474F57B006EAB6D /* Tablas201711.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tablas201711.entitlements; sourceTree = "<group>"; };
 		3EE2B60A244D125C00B80648 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3EF9B08824773C31002F77D9 /* SecondTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableTableViewController.swift; sourceTree = "<group>"; };
 		A31E2A94BBAAB1CF2B132D30 /* Pods-Tablas201711.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tablas201711.release.xcconfig"; path = "Target Support Files/Pods-Tablas201711/Pods-Tablas201711.release.xcconfig"; sourceTree = "<group>"; };
 		C013829EF27C56F86417AF36 /* Pods_Tablas201711.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tablas201711.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F40244A8244E63BC00072534 /* CompraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompraViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				F46C575B2450D9EF007BB998 /* RegistrateViewController.swift */,
 				3597A1891E5F80A1006B54D7 /* DetalleViewController.swift */,
 				3EE2B60A244D125C00B80648 /* MainViewController.swift */,
+				3EF9B08824773C31002F77D9 /* SecondTableTableViewController.swift */,
 			);
 			path = Tablas201711;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				F40244A9244E63BD00072534 /* CompraViewController.swift in Sources */,
 				3546B96E1E5B96FD0035B84F /* ListaMarcasTableViewController.swift in Sources */,
 				F4F7DD7C2475DB6100A3691F /* Alimentos.mlmodel in Sources */,
+				3EF9B08924773C31002F77D9 /* SecondTableTableViewController.swift in Sources */,
 				F46C575C2450D9EF007BB998 /* RegistrateViewController.swift in Sources */,
 				3EE2B60B244D125C00B80648 /* MainViewController.swift in Sources */,
 			);
