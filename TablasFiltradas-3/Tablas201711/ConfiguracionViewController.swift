@@ -12,7 +12,10 @@ import Firebase
 import FirebaseAuth
 
 class ConfiguracionViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    @IBOutlet weak var correo: UITextField!
     @IBOutlet weak var camaraBoton: UIButton!
+    @IBOutlet weak var password: UITextField!
     @IBOutlet weak var fotoVista: UIImageView!
      var handle: AuthStateDidChangeListenerHandle?
     
@@ -20,18 +23,43 @@ class ConfiguracionViewController: UIViewController, UIImagePickerControllerDele
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
         if !UIImagePickerController.isSourceTypeAvailable(.camera){
             camaraBoton.isHidden = true
         }
         miPicker.delegate = self
-        handle = Auth.auth().addStateDidChangeListener { (auth, user) in
-          // ...
-        }
-
-        
+       let user = Auth.auth().currentUser
+       if let user = user {
+         // The user's ID, unique to the Firebase project.
+         // Do NOT use this value to authenticate with your backend server,
+         // if you have one. Use getTokenWithCompletion:completion: instead.
+         let uid = user.uid
+         let email = user.email
+        print(email)
+        print("IHIUHDIUH")
+            
+        correo.text = email
+        /*let photoURL = user.photoURL
+         var multiFactorString = "MultiFactor: "
+         for info in user.multiFactor.enrolledFactors {
+           multiFactorString += info.displayName ?? "[DispayName]"
+           multiFactorString += " "
+         }*/
+         // ..
+       }
         
     }
     
+    @IBAction func changeMail(_ sender: Any) {
+        Auth.auth().currentUser?.updateEmail(to: correo.text!) { (error) in
+          // ...
+        }
+    }
+    @IBAction func changePassword(_ sender: Any) {
+        Auth.auth().currentUser?.updatePassword(to: password.text!) { (error) in
+          // ...
+        }
+    }
     @IBAction func guardarImagen(_ sender: Any) {
         UIImageWriteToSavedPhotosAlbum(fotoVista.image!, nil, nil, nil)
     }
@@ -60,6 +88,11 @@ let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+    @IBAction func cierra(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Main")
+        vc!.modalPresentationStyle = .fullScreen
+        self.present(vc!, animated: true, completion: nil)
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         

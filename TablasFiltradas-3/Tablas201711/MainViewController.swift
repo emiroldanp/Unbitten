@@ -131,6 +131,7 @@ class MainViewController: UIViewController {
                         if error == nil {
                             print("successful login")
                             let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home")
+                            vc!.modalPresentationStyle = .fullScreen
                             self.present(vc!, animated: true, completion: nil)
                             
                         } else {

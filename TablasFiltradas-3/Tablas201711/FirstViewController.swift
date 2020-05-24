@@ -17,6 +17,7 @@ class FirstViewController: UIViewController,CLLocationManagerDelegate{
     var handle: AuthStateDidChangeListenerHandle?
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
         mapa.showsUserLocation = true
         createAnnotations(locations: annotationLocations)

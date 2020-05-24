@@ -40,7 +40,8 @@ class CompraViewController: UIViewController {
         if segue.identifier == "Confirmar" {
             let siguienteVista = segue.destination as! SecondViewController
             siguienteVista.image = imagen
-            siguienteVista.promo = promo
+            siguienteVista.promo = promo;
+            //firebase.analytics().setUserProperties({Ultima: 'apples'});
             //siguienteVista.imagen = laImagen.image
             
             //_ = segue.destination as!
