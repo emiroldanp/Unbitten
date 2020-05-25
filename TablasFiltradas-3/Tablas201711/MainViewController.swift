@@ -156,6 +156,8 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         signed = 0
         // Do any additional setup after loading the view.
+        loginEmailField.placeholder = "correo"
+        loginPasswordField.placeholder = "contraseña"
     }
     
 

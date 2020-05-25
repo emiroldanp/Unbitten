@@ -440,7 +440,7 @@
                                     <action selector="ingresa:" destination="ZYa-vB-HnW" eventType="touchUpInside" id="odC-Sm-Fxs"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="correo" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Chf-vx-nU1">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Chf-vx-nU1">
                                 <rect key="frame" x="87" y="366" width="240" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="4Ve-uj-Gre"/>
@@ -448,7 +448,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="contraseña" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="96A-QC-Zxa">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="96A-QC-Zxa">
                                 <rect key="frame" x="87" y="455" width="240" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="swL-Ve-cuk"/>
