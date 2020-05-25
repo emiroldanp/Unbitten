@@ -9,6 +9,7 @@
 import UIKit
 import Vision
 import Firebase
+import FirebaseStorage
 import FirebaseAuth
 
 class ConfiguracionViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -35,10 +36,25 @@ class ConfiguracionViewController: UIViewController, UIImagePickerControllerDele
          // if you have one. Use getTokenWithCompletion:completion: instead.
          let uid = user.uid
          let email = user.email
+         let photoUrl = user.photoURL;
         print(email)
+        print(photoUrl)
         print("IHIUHDIUH")
             
         correo.text = email
+        //let nom:String = uid+".png"
+        
+        if(photoUrl != nil){
+            let strImage:String = photoUrl!.absoluteString
+            var image:UIImage!
+            
+                // ... your strImage is String  ...
+            if let data = NSData(contentsOf: URL(string:strImage )!) {
+                image = UIImage(data: data as Data)
+                fotoVista.image = image
+             }
+        }
+        
         /*let photoURL = user.photoURL
          var multiFactorString = "MultiFactor: "
          for info in user.multiFactor.enrolledFactors {
@@ -61,12 +77,43 @@ class ConfiguracionViewController: UIViewController, UIImagePickerControllerDele
         }
     }
     @IBAction func guardarImagen(_ sender: Any) {
-        UIImageWriteToSavedPhotosAlbum(fotoVista.image!, nil, nil, nil)
+        let user = Auth.auth().currentUser
+        if let user = user {
+                // The user's ID, unique to the Firebase project.
+                // Do NOT use this value to authenticate with your backend server,
+                // if you have one. Use getTokenWithCompletion:completion: instead.
+                let uid = user.uid
+                let nom:String = uid+".png"
+            let storageRef = Storage.storage().reference().child(nom)
+            if(fotoVista.image != nil){
+                let compressedImage = fotoVista.image!
+                if let uploadData = compressedImage.pngData(){
+                    storageRef.putData(uploadData, metadata: nil, completion: {(metadata,error) in //self.hideActivityIndicator(view:self.view)
+                        if error != nil{
+                            //self.writeDatabaseCustomer()
+                            print("error")
+                            return
+                        }else{
+                            let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
+                            storageRef.downloadURL(completion: {(url, error) in
+                                print("Image URL: \((url?.absoluteString)!)")
+                                changeRequest?.photoURL = url
+                                changeRequest?.commitChanges { (error) in
+                                  // ...
+                                }
+                                //self.writeDatabaseCustomer(imageUrl: (url?.absoluteString)!)
+                            })
+                            
+                            
+                            
+                        }
+                    })
+                }
+            }
+        }
+        
+        
     }
-    /*
-    @IBAction func guardarFoto(_ sender: Any) {
-    UIImageWriteToSavedPhotosAlbum(fotoVista.image!, nil, nil, nil)
-    }*/
     
     @IBAction func cambiarFoto(_ sender: Any) {
         miPicker.sourceType = UIImagePickerController.SourceType.photoLibrary
