@@ -158,6 +158,7 @@ class MainViewController: UIViewController {
         // Do any additional setup after loading the view.
         loginEmailField.placeholder = "correo"
         loginPasswordField.placeholder = "contraseña"
+        loginPasswordField.isSecureTextEntry = true
     }
     
 
