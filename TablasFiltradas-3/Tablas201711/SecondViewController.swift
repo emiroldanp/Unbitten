@@ -12,8 +12,8 @@ import FirebaseStorage
 
 class SecondViewController: UIViewController {
     var handle: AuthStateDidChangeListenerHandle?
-    var image:UIImage!
-    var promo:String!
+    var image:UIImage?
+    var promo:String?
     
     @IBOutlet weak var Promo: UILabel!
     @IBOutlet weak var imagen: UIImageView!

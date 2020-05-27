@@ -59,13 +59,13 @@
         <!--Pedido-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController storyboardIdentifier="pedid" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Tablas201711" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CompraV" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Tablas201711" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Producto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Mi-3h-6Xo">
@@ -100,11 +100,22 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-7" translatesAutoresizingMaskIntoConstraints="NO" id="Pj1-6C-RYZ">
-                                <rect key="frame" x="87" y="400.5" width="240" height="306.5"/>
+                                <rect key="frame" x="87" y="400.5" width="240" height="257.5"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="4BO-OS-P1h">
                                 <rect key="frame" x="329" y="37" width="65" height="47"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYV-HH-gwa">
+                                <rect key="frame" x="95" y="779" width="225" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Volver al menú">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="3au-W0-oFy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.43365664250000002" blue="0.50875765340000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -1034,7 +1045,7 @@
                         <viewControllerLayoutGuide type="bottom" id="xAz-xB-bYn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9hZ-Bk-hFN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image-9" translatesAutoresizingMaskIntoConstraints="NO" id="GuN-9l-hq6">
@@ -1104,7 +1115,6 @@
                                 </state>
                                 <connections>
                                     <action selector="confirmar:" destination="ouu-BW-75j" eventType="touchUpInside" id="ifJ-Db-bhE"/>
-                                    <segue destination="8rJ-Kc-sve" kind="show" id="llX-Jz-oXj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1119,7 +1129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qgc-Ns-Rqh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4889.8550724637689" y="418.52678571428572"/>
+            <point key="canvasLocation" x="3422" y="360"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pRx-YJ-ghL">
@@ -1161,13 +1171,12 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="E7R-dk-yzK"/>
         <segue reference="5jL-5n-V0E"/>
         <segue reference="a3r-HK-16J"/>
+        <segue reference="3au-W0-oFy"/>
         <segue reference="tOO-NW-tlJ"/>
         <segue reference="E0H-jf-Zc3"/>
         <segue reference="VE4-Gu-ySr"/>
-        <segue reference="llX-Jz-oXj"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="400" height="220"/>

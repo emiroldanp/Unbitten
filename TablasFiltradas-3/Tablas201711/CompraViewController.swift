@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseAuth
 import FirebaseStorage
+import LocalAuthentication
 
 class CompraViewController: UIViewController {
     var handle: AuthStateDidChangeListenerHandle?
@@ -37,6 +38,7 @@ class CompraViewController: UIViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     @IBAction func confirmar(_ sender: Any) {
+        
         let user = Auth.auth().currentUser
         if let user = user {
                 // The user's ID, unique to the Firebase project.
@@ -63,19 +65,30 @@ class CompraViewController: UIViewController {
                                 }
                                 //self.writeDatabaseCustomer(imageUrl: (url?.absoluteString)!)
                             })
-                            
-                            
-                            
                         }
                     })
                 }
             }
         }
-        //SecondViewController.load()
-        /*let vc = self.storyboard?.instantiateViewController(withIdentifier: "pedid")
         
-        vc!.modalPresentationStyle = .fullScreen
-        self.present(vc!, animated: true, completion: nil)*/
+        let context:LAContext = LAContext()
+        
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil) {
+            context.evaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, localizedReason: "¿Desea confirmar el pedido?") { (good, error) in
+                if good {
+                    print("GOOD")
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "CompraV")
+                    //vc!.modalPresentationStyle = .fullScreen
+                    //self.present(vc!, animated: true, completion: nil)
+                    
+                } else {
+                    print("TRY AGAIN")
+                    
+                }
+            }
+        }
+        
+        
         
     }
     
@@ -83,9 +96,8 @@ class CompraViewController: UIViewController {
         // Get the new view controller using segue.destination.
         if segue.identifier == "Confirmar" {
             
-            let siguienteVista = segue.destination as! SecondViewController
-            siguienteVista.image = imagen
-            siguienteVista.promo = promo;
+            
+        
         
             //siguienteVista.si = 1;
             //firebase.analytics().setUserProperties({Ultima: 'apples'});
