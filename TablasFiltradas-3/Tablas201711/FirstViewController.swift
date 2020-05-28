@@ -13,6 +13,7 @@ import FirebaseAuth
 
 class FirstViewController: UIViewController,CLLocationManagerDelegate{
     @IBOutlet weak var mapa: MKMapView!
+    
     private let locationManager = CLLocationManager()
     var handle: AuthStateDidChangeListenerHandle?
     override func viewDidLoad() {

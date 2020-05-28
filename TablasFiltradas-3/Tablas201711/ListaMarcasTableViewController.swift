@@ -142,17 +142,38 @@ class ListaMarcasTableViewController: UITableViewController, UISearchResultsUpda
                let objetoMarca = datosFiltrados[indexPath.row] as! [String: Any]
                
                let tip:String = objetoMarca["tipo"] as! String
-               let s:String = objetoMarca["name"] as! String
-               
-               let strImage:String = objetoMarca["image"] as! String
                
                    // ... your strImage is String  ...
                if(tip == tipo){
+                   let s:String = objetoMarca["name"] as! String
+                   
+                   let strImage:String = objetoMarca["image"] as! String
+                   let d:String = objetoMarca["Description"] as! String
+
+                   let p:String = objetoMarca["Promo_Text"] as! String
+                   let pre:String = objetoMarca["Precio Final"] as! String
+                   var image:UIImage!
                    if let data = NSData(contentsOf: URL(string:strImage )!) {
                        cell.imageView!.image = UIImage(data: data as Data)
                     }
-                   
-                   cell.textLabel?.text=s
+                         //Paso 15: crear un identificador para el controlador de vista a nivel detalle
+                    let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "Detalle") as! DetalleViewController
+                         //Verificar si la vista actual es la de búsqueda
+        
+                         //sino utilizar la vista sin filtro
+                             // ... your strImage is String  ...
+                         if let data = NSData(contentsOf: URL(string:strImage )!) {
+                             image = UIImage(data: data as Data)
+                          }
+                         
+                         siguienteVista.marca = s
+                         siguienteVista.descripcion = d
+                         siguienteVista.imagen = image
+                         siguienteVista.promocion = p
+                         siguienteVista.precio = pre
+                         self.navigationController?.pushViewController(siguienteVista, animated: true)
+                         self.present(siguienteVista, animated: true, completion: nil)
+                   //cell.textLabel?.text=s
                    //cell.imageView?.image=UI
                }
                

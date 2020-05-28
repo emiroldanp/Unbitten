@@ -46,6 +46,7 @@ class DetalleViewController: UIViewController {
     }
     
 
+ 
     
     // MARK: - Navigation
 
