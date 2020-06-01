@@ -38,15 +38,19 @@ class MLViewController: UIViewController, UIImagePickerControllerDelegate, UINav
     @available(iOS 12.0, *)
     @IBAction func ejecutarML(_ sender: Any) {
         //instanciar el modelo de la red neuronal
-        let modelFile = Alimentos()
-        let model = try! VNCoreMLModel(for: modelFile.model)
-        //Convertir la imagen obtenida a CIImage
-        let imagenCI = CIImage(image: fotoVista.image!)
-        //Crear un controlador para el manejo de la imagen, este es un requerimiento para ejecutar la solicitud del modelo
-        let handler = VNImageRequestHandler(ciImage: imagenCI!)
-        //Crear una solicitud al modelo para el análisis de la imagen
-        let request = VNCoreMLRequest(model: model, completionHandler: resultadosModelo)
-        try! handler.perform([request])
+        if(fotoVista.image != nil) {
+            let modelFile = Alimentos()
+            let model = try! VNCoreMLModel(for: modelFile.model)
+            //Convertir la imagen obtenida a CIImage
+            let imagenCI = CIImage(image: fotoVista.image!)
+            //Crear un controlador para el manejo de la imagen, este es un requerimiento para ejecutar la solicitud del modelo
+            let handler = VNImageRequestHandler(ciImage: imagenCI!)
+            //Crear una solicitud al modelo para el análisis de la imagen
+            let request = VNCoreMLRequest(model: model, completionHandler: resultadosModelo)
+            try! handler.perform([request])
+        } else {
+            print("Select an image first")
+        }
         
     }
     
