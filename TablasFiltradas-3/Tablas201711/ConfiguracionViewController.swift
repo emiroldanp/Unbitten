@@ -25,6 +25,15 @@ class ConfiguracionViewController: UIViewController, UIImagePickerControllerDele
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        //Looks for single or multiple taps.
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+
+        //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
+        //tap.cancelsTouchesInView = false
+
+        view.addGestureRecognizer(tap)
+        
+        
         if !UIImagePickerController.isSourceTypeAvailable(.camera){
             camaraBoton.isHidden = true
         }
@@ -64,6 +73,11 @@ class ConfiguracionViewController: UIViewController, UIImagePickerControllerDele
          // ..
        }
         
+    }
+    
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
     
     @IBAction func changeMail(_ sender: Any) {
